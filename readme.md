@@ -12,8 +12,9 @@ This action is based upon the OWASP Dependency-Check [tool](https://owasp.org/ww
 The action receives three parameters: Project name, scanpath and report format, but more parameters can be added as optional. 
 
 Example:
-```
 
+```yml
+---
 on: [push]
 
 jobs:
