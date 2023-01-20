@@ -10,6 +10,8 @@ LABEL repository="https://github.com/dependency-check/Dependency-Check_Action" \
 
 USER root 
 
+RUN apk add bash
+
 COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/bin/sh","/entrypoint.sh"]
+
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
