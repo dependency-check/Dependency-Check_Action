@@ -42,7 +42,7 @@ jobs:
           path: '.'
           format: 'HTML'
           out: 'reports' # this is the default, no need to specify unless you wish to override it
-          args: >
+          args: >-
             --failOnCVSS 7
             --enableRetired
       - name: Upload Test results
