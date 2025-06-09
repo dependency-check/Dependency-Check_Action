@@ -58,7 +58,6 @@ When used in conjunction with the GitHub Action [setup-java](https://github.com/
 This is due to the environment variable `JAVA_HOME` being changed by the setup-java GitHub Action. To fix this problem you will need to reset `JAVA_HOME` to match how it's being set in the image [Dependency-Check Docker Image](https://github.com/jeremylong/DependencyCheck/blob/main/Dockerfile#L16) within the Depcheck step. 
 
 Example:
-```
 ```yaml
 ...
 - name: Depcheck
